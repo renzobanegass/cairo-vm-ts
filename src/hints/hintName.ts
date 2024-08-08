@@ -15,5 +15,5 @@ export enum HintName {
   ShouldContinueSquashLoop = 'ShouldContinueSquashLoop',
   ShouldSkipSquashLoop = 'ShouldSkipSquashLoop',
   TestLessThan = 'TestLessThan',
-  TestLessThanOrEqualAddress = 'TestLessThanOrEqualAddress'
+  TestLessThanOrEqualAddress = 'TestLessThanOrEqualAddress',
 }
