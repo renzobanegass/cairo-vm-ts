@@ -48,7 +48,7 @@ import {
   shouldSkipSquashLoop,
 } from './dict/shouldSkipSquashLoop';
 import { TestLessThan, testLessThan } from './math/testLessThan';
-import { testLessThanOrEqualAddress } from './math/testLessThanOrEqualAddress';
+import { TestLessThanOrEqualAddress, testLessThanOrEqualAddress } from './math/testLessThanOrEqualAddress';
 
 /**
  * Map hint names to the function executing their logic.
@@ -127,7 +127,7 @@ export const handlers: HintHandler = {
     testLessThan(vm, h.lhs, h.rhs, h.dst);
   },
   [HintName.TestLessThanOrEqualAddress]: (vm, hint) => {
-    const h = hint as TestLessThan;
+    const h = hint as TestLessThanOrEqualAddress;
     testLessThanOrEqualAddress(vm, h.lhs, h.rhs, h.dst);
   },
 };
